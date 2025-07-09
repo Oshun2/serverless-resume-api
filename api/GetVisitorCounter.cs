@@ -18,8 +18,8 @@ namespace Api.Function
         }
 
         [Function("GetVisitorCounter")]
-        public async Task<HttpResponseData> Run(
-            [HttpTrigger(AuthorizationLevel.Anonymous, "get")] HttpRequestData req)
+public async Task<HttpResponseData> Run(
+   [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "api/GetVisitorCount")] HttpRequestData req)
         {
             try
             {
