@@ -42,5 +42,9 @@ jobs:
         id: closepullrequest
         uses: Azure/static-web-apps-deploy@v1
         with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_BRAVE_POND_0B679020F }}
-          action: "close"
+         azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_BRAVE_POND_0B679020F }}
+         repo_token: ${{ secrets.GITHUB_TOKEN }}
+         action: "upload"
+         app_location: "frontend"          # HTML/CSS/etc
+         api_location: "api"               # C# Azure Function folder
+         output_location: ""               # Leave blank for static HTML
