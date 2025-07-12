@@ -1,0 +1,44 @@
+version: '3'
+services:
+  api:
+    image: mcr.microsoft.com/devcontainers/dotnet
+    volumes:
+      # Mount the root folder that contains .git
+      - .:/workspace:cached
+    command: sleep infinity
+    links:
+      - frontend
+    networks: 
+      - mynet    
+    # ...
+
+  frontend:
+    image: mcr.microsoft.com/devcontainers/typescript-node:1-20-bookworm
+    volumes:
+      # Mount the root folder that contains .git
+      - .:/workspace:cached
+    command: sleep infinity
+    networks: 
+      - mynet
+
+  tests:
+    image: mcr.microsoft.com/devcontainers/dotnet:8.0-bookworm
+    volumes:
+      # Mount the root folder that contains .git
+      - .:/workspace:cached
+    command: sleep infinity
+    links:
+      - api
+    networks: 
+      - mynet    
+    # ...
+      
+networks:
+  mynet:
+    driver: bridge
+    ipam:
+      driver: default
+  
+
+    
+    # ...

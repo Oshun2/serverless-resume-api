@@ -1,0 +1,16 @@
+<<<<<<< HEAD
+{
+    "azureFunctions.deploySubpath": "api/bin/Release/net8.0/publish",
+    "azureFunctions.projectLanguage": "C#",
+    "azureFunctions.projectRuntime": "~4",
+    "debug.internalConsoleOptions": "neverOpen",
+    "azureFunctions.preDeployTask": "publish (functions)"
+=======
+{
+    "azureFunctions.deploySubpath": "src/bin/Release/net8.0/publish",
+    "azureFunctions.projectLanguage": "C#",
+    "azureFunctions.projectRuntime": "~4",
+    "debug.internalConsoleOptions": "neverOpen",
+    "azureFunctions.preDeployTask": "publish (functions)"
+>>>>>>> bdacfb84d12c07327c05ec130bb992be662edcea
+}

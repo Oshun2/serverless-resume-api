@@ -1,0 +1,14 @@
+<<<<<<< HEAD
+{
+  "recommendations": [
+    "ms-azuretools.vscode-azurefunctions",
+    "ms-dotnettools.csharp"
+  ]
+=======
+{
+  "recommendations": [
+    "ms-azuretools.vscode-azurefunctions",
+    "ms-dotnettools.csharp"
+  ]
+>>>>>>> bdacfb84d12c07327c05ec130bb992be662edcea
+}
